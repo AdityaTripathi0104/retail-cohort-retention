@@ -92,3 +92,6 @@ Tech Stack
 SQL: MySQL 8.0 (CTEs, Window Functions, Period Math).
 
 Conceptual: Cohort Analysis, Unit Economics, Lifecycle Marketing.
+
+# Phase 7 — Final Synthesis
+This project demonstrates that while customer count drops over time, the surviving loyal core increases their spend significantly, providing a pathway to "Negative Churn" and long-term profitability.
