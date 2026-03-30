@@ -1,10 +1,10 @@
 # retail-cohort-retention
 Advanced SQL framework for tracking Customer Retention, ARPU, and Net Revenue Retention (NRR) across a 12-month lifecycle.
 
-E-Commerce Customer Lifecycle & Cohort Analysis (SQL)
+# E-Commerce Customer Lifecycle & Cohort Analysis (SQL)
 A comprehensive SQL-based analytical framework for evaluating customer retention, lifetime value (ARPU), and churn dynamics using a business-driven cohort methodology.
 
-Phase 0 — Business Framing
+# Phase 0 — Business Framing
 Objective
 The primary objective of this project is to quantify customer loyalty and unit economics over time. By segmenting customers into acquisition cohorts, we aim to identify which groups drive long-term revenue and where the business is losing "wallet share."
 
@@ -17,7 +17,7 @@ Churn: Identifying the "leakage points" in the customer lifecycle.
 
 Net Revenue Retention (NRR): Measuring the total financial health and growth/decay of specific customer groups.
 
-Phase 1 — Data Validation & Cleaning
+# Phase 1 — Data Validation & Cleaning
 Objective
 Ensure the transactional dataset is sanitized and structured for longitudinal analysis (tracking the same user over 12 months).
 
@@ -28,7 +28,7 @@ Negative Value Logic: Identified and isolated "C" prefix invoices (Returns) to e
 
 Structural Cleaning: Removed non-product transactions (e.g., POSTAGE, BANK CHARGES) to focus purely on inventory-driven revenue.
 
-Phase 2 — Retention Matrix Construction
+# Phase 2 — Retention Matrix Construction
 Objective
 Map the "Birth Month" of every customer and track their return behavior over an 11-month horizon.
 
@@ -42,7 +42,7 @@ The Retention Pivot: Constructed a matrix showing the percentage of users return
 Key Takeaway
 Phase 2 identified the Dec 2010 cohort as a statistical outlier with significantly higher long-term retention compared to mid-year acquisitions.
 
-Phase 3 — Monetization (ARPU) Dynamics
+# Phase 3 — Monetization (ARPU) Dynamics
 Objective
 Transition from "counting people" to "counting value" by analyzing the Average Revenue Per User (ARPU).
 
@@ -54,7 +54,7 @@ Expansion Revenue Detection: Investigated if "surviving" customers spend more ov
 Key Takeaway
 While retention percentages naturally decay, the ARPU for the Dec 2010 cohort increased by ~78% between Month 0 and Month 11, indicating a high-value "loyal core."
 
-Phase 4 — Churn & Lifecycle Analysis
+# Phase 4 — Churn & Lifecycle Analysis
 Objective
 Define "The End" of the customer lifecycle and identify cohorts with high "Early-Death" rates.
 
@@ -66,7 +66,7 @@ Cohort Health Comparison: Directly compared "Active" vs. "Churned" counts per bi
 Key Takeaway
 The April 2011 cohort was identified as a "Low-Quality" group, with churned customers outnumbering active ones (52% churn), highlighting a potential failure in Q2 acquisition strategy.
 
-Phase 5 — Synthesis & Net Revenue Retention (NRR)
+# Phase 5 — Synthesis & Net Revenue Retention (NRR)
 Objective
 Combine Retention and ARPU into a single "Health KPI": Net Revenue Retention (NRR).
 
@@ -77,7 +77,7 @@ Recovery Tracking: Quantified how much "lost" revenue from churn is recovered by
 
 The "Golden Goal" Metric: Identified months where NRR approaches or exceeds 100% (Negative Churn).
 
-Phase 6 — Assumptions & Limitations
+# Phase 6 — Assumptions & Limitations
 Validation Notes
 Immature Data: Churn rates for late-2011 cohorts are "immature" due to the 90-day window and should be re-evaluated after more data is collected.
 
