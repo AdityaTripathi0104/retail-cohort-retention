@@ -1,4 +1,4 @@
-# retail-cohort-retention
+# Retail-Cohort-Retention
 Advanced SQL framework for tracking Customer Retention, ARPU, and Net Revenue Retention (NRR) across a 12-month lifecycle.
 
 # E-Commerce Customer Lifecycle & Cohort Analysis (SQL)
